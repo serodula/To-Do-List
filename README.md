@@ -1,79 +1,63 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# To-Do-List
 
-# Getting Started
+This is a simple to-do list app built with React Native that uses animations when adding or deleting tasks. It also utilizes AsyncStorage to persist tasks between app sessions.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
+- Add tasks with animation.
+- Delete tasks with animation.
+- Edit tasks.
+- Toggle task completion.
+- Tasks are saved in `AsyncStorage`, so they persist even when the app is closed.
 
-## Step 1: Start the Metro Server
+## Prerequisites
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Make sure to have the following tools installed:
 
-To start Metro, run the following command from the _root_ of your React Native project:
+1. **Node.js**: You can download it from [here](https://nodejs.org/).
+2. **React Native CLI**: Install React Native CLI by running the following command:
+   npm install -g react-native-cli
+3. **Xcode** for iOS (for emulators and device testing).
+4. **AsyncStorage:** This app uses @react-native-async-storage/async-storage. It will be automatically installed when you run npm install.
 
-```bash
-# using npm
-npm start
+## Getting Started
 
-# OR using Yarn
-yarn start
-```
+- Clone the repository:
+- git clone https://github.com/serodula/To-Do-List.git
+- Navigate to the project directory:
+- cd To-Do-List
+- Install the dependencies:
+- npm install
+- Start the app:
+- npx react-native run-ios
 
-## Step 2: Start your Application
+## How It Works
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+- Add a Task:
+- Enter text in the input field and click the "+" button to add a new task.
+- Tasks are added with a scale animation to make the addition smooth and visually engaging.
+- Delete a Task:
+- Click the "Delete" button next to any task to remove it.
+- A scale animation is applied when the task is deleted.
+- Edit a Task:
+- Click the "Edit" button next to any task to start editing.
+- The task text will appear in the input field for editing.
+- Toggle Task Completion:
+- Tap the task text to mark it as completed or uncompleted.
+- Completed tasks are styled with a strikethrough.
 
-### For Android
+## Dependencies
 
-```bash
-# using npm
-npm run android
+- react-native: The core framework for building the mobile app.
+- @react-native-async-storage/async-storage: A package to store data locally on the device.
+- react: React is the JavaScript library used to build the user interface.
+- react-native-animated: For task and button animations.
 
-# OR using Yarn
-yarn android
-```
+## Troubleshooting
 
-### For iOS
+- Ensure you have set up the iOS emulator properly.
+- Make sure AsyncStorage is correctly configured for data persistence.
+- If you encounter errors, check the logs using npx react-native log-ios.
 
-```bash
-# using npm
-npm run ios
 
-# OR using Yarn
-yarn ios
-```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+>>>>>>> 2ae2d8c346c1904bb9f1d813966b36e45f2df6c8
