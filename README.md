@@ -1,79 +1,68 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+## Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Clone the repository:
+git clone https://github.com/serodula/To-Do-List.git
+Navigate to the project directory:
+cd To-Do-List
+Install the dependencies:
+npm install
+Start the app:
+npx react-native run-ios
+- Clone the repository:
+- git clone https://github.com/serodula/To-Do-List.git
+- Navigate to the project directory:
+- cd To-Do-List
+- Install the dependencies:
+- npm install
+- Start the app:
+- npx react-native run-ios
 
-## Step 1: Start the Metro Server
+## How It Works
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Add a Task:
+Enter text in the input field and click the "+" button to add a new task.
+Tasks are added with a scale animation to make the addition smooth and visually engaging.
+Delete a Task:
+Click the "Delete" button next to any task to remove it.
+A scale animation is applied when the task is deleted.
+Edit a Task:
+Click the "Edit" button next to any task to start editing.
+The task text will appear in the input field for editing.
+Toggle Task Completion:
+Tap the task text to mark it as completed or uncompleted.
+Completed tasks are styled with a strikethrough.
+- Add a Task:
+- Enter text in the input field and click the "+" button to add a new task.
+- Tasks are added with a scale animation to make the addition smooth and visually engaging.
+- Delete a Task:
+- Click the "Delete" button next to any task to remove it.
+- A scale animation is applied when the task is deleted.
+- Edit a Task:
+- Click the "Edit" button next to any task to start editing.
+- The task text will appear in the input field for editing.
+- Toggle Task Completion:
+- Tap the task text to mark it as completed or uncompleted.
+- Completed tasks are styled with a strikethrough.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Dependencies
 
-```bash
-# using npm
-npm start
+react-native: The core framework for building the mobile app.
+@react-native-async-storage/async-storage: A package to store data locally on the device.
+react: React is the JavaScript library used to build the user interface.
+react-native-animated: For task and button animations.
+- react-native: The core framework for building the mobile app.
+- @react-native-async-storage/async-storage: A package to store data locally on the device.
+- react: React is the JavaScript library used to build the user interface.
+- react-native-animated: For task and button animations.
 
-# OR using Yarn
-yarn start
-```
+## Troubleshooting
 
-## Step 2: Start your Application
+Ensure you have set up the iOS emulator properly.
+Make sure AsyncStorage is correctly configured for data persistence.
+If you encounter errors, check the logs using npx react-native log-ios.
+- Ensure you have set up the iOS emulator properly.
+- Make sure AsyncStorage is correctly configured for data persistence.
+- If you encounter errors, check the logs using npx react-native log-ios.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
